@@ -1,0 +1,152 @@
+
+.md .toolbar a.link i + span, .md .toolbar a.link i + i, .md .toolbar a.link span + i, .md .toolbar a.link span + span {
+    margin-left: 0px;
+}
+
+.md .toolbar a.link {
+    line-height: 24px;
+    height: 24px;
+}
+.bg-red, .button.button-fill.bg-red, .list-block .swipeout-actions-left a.bg-red, .list-block .swipeout-actions-right a.bg-red, a.bg-red {
+    background-color: #ff3b30;
+}
+.bg-green, .button.button-fill.bg-green, .list-block .swipeout-actions-left a.bg-green, .list-block .swipeout-actions-right a.bg-green, a.bg-green {
+    background-color: #4cd964;
+}
+
+
+element.style {
+}
+
+.md .badge {
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 1px 6px;
+    vertical-align: middle;
+}
+
+/*mediaItem 图片样式*/
+.item-media img{
+  height: 60px;
+  width: 60px;
+}
+
+/*赛事详情 */
+.card-content-inner{
+  padding: 4px 16px;
+}
+
+/*赛事卡片*/
+.color-333{
+  color: #333;
+}
+
+/*赛事 from*/
+.from-group-title{
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.form-body .list.media-list{
+  margin-top: 6px;
+}
+/*赛事 colony*/
+.margin-top-6{
+  margin-top: 6px!important;
+}
+.margin-top-6 .item-after{
+  color: #2196f3!important;
+}
+.colony-sub-title{
+  font-size: 14px;
+  color: #757575;
+  padding: 0 16px;
+}
+.btn-100{
+  width: 100px;
+  float: right;
+  font-size: 14px!important;
+  font-weight: 500!important;
+}
+.colony-block-title{
+  height: 36px;
+  line-height: 36px;
+}
+/*赛事 personal*/
+.margin-top-6-g{
+  margin-top: 6px!important;
+}
+.from-group-title .total-price{
+  text-align: right;
+}
+.from-group-title .total-price .price{
+  color: #ff3b30;
+}
+/*赛事 live*/
+.price{
+  color: #ff3b30;
+  font-size: 20px;
+}
+.reduce-msg{
+  font-size: 14px;
+  color: #757575;
+}
+.residue{
+  color: #ff3b30;
+}
+.input-number-slot{
+  position: relative;
+  z-index: 999999;
+}
+.input-number-slot .el-input-number--mini{
+  position: absolute;
+  top: 25px;
+  right: -20px;
+  font-size: 16px;
+}
+.input-number-slot .vux-inline-x-number{
+  position: absolute;
+  top: 30px;
+  right: -10px;
+}
+.input-number-slot .vux-inline-x-number > div{
+  width: 110px;
+  height: 35px;
+}
+/*赛事 加减器*/
+.input-number-slot-h .el-input-number--mini{
+  right: -4px;
+  font-size: 16px;
+}
+/*赛事订单 order*/
+.head{
+  width: 50%;
+  padding: 14px 0;
+}
+.tail{
+  width: 40%;
+  padding-right: 16px;
+  text-align: right;
+}
+.order-no-inner .item-inner{
+  display: none;
+}
+/*赛事 success*/
+.suc-link{
+  width: 49%;
+}
+/*我的 my-attention*/
+.no-padding ul{
+  padding-left: 0!important;
+}
+.cus-action{
+  text-align: center;
+}
+/*vux弹窗*/
+.weui-mask{
+  z-index: 5000!important;
+}
+.cus-p .tab-link-active{
+  color: #2196f3!important;
+}
+
