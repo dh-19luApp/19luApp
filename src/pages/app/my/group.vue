@@ -36,7 +36,7 @@
         }
       },
       beforeMount(){
-        this.axios.get('http://19lu-api.hayzon.com/v1/playergroups/search').then(
+        this.axios.get('http://home.19road.com/19lu/api/web/v1/playergroups/search').then(
           (response)=>{
             this.groupList=response.data.data.items
           }

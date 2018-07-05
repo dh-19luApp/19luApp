@@ -140,7 +140,7 @@
                 }
             },
             beforeMount() {
-                this.axios.get('http://19lu-api.hayzon.com/v1/orders/search?feilds=statistical,refund').then(function (response) {
+                this.axios.get('http://home.19road.com/19lu/api/web/v1/orders/search?feilds=statistical,refund').then(function (response) {
                         this.listData=response.data.data.items;
                     }.bind(this)
                 ).catch(function (error) {

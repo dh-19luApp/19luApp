@@ -126,7 +126,7 @@
       },
       beforeMount(){
         console.log(this.$store.state.user.token);
-        this.axios.get('http://19lu-api.hayzon.com/v1/signups/1?fields=mygame').then((response)=>{
+        this.axios.get('http://home.19road.com/19lu/api/web/v1/signups/1?fields=mygame').then((response)=>{
           this.listData=response.data.data.mygame;
         }).catch((error)=>{
 

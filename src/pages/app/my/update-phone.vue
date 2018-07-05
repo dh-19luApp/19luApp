@@ -47,7 +47,7 @@
       },
       methods:{
         sendMsg(){
-          this.axios.post('http://19lu-api.hayzon.com/v1/user/modifyphone',{
+          this.axios.post('http://home.19road.com/19lu/api/web/v1/user/modifyphone',{
               phone:this.phone,
             code:this.code
           }).then((response)=>{

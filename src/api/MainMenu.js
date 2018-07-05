@@ -6,7 +6,7 @@ import axios from 'axios'
 export default {
     getItems (cb) {
         axios({
-            url:'http://19lu-api.hayzon.com/v1/menus/toolbar',
+            url:'http://home.19road.com/19lu/api/web/v1/menus/toolbar',
             method: 'get',
         })
             .then( (response) => {

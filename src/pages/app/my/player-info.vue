@@ -23,6 +23,7 @@
                         <div class="item-title label">性别</div>
                         <div class="item-input" style="margin-right:8%;width: 200px; ">
                             <select>
+                                <option>请选择</option>
                                 <option>男</option>
                                 <option>女</option>
                             </select>

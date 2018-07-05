@@ -148,7 +148,7 @@
                     data.player.push(playerItem);
                 };
                 if (sendFlag) {
-                    this.axios.post('http://sign.19road.com/19lu/api/web/v1/orders/addorder', {
+                    this.axios.post('http://home.19road.com/19lu/api/web/v1/orders/addorder', {
                         data: data
                     }).then((response) => {
                         console.log(response.data);

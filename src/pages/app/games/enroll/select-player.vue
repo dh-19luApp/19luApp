@@ -84,7 +84,7 @@
       }
     },
     beforeMount() {
-      this.axios.get('http://19lu-api.hayzon.com/v1/relations/search').then((response)=>{
+      this.axios.get('http://home.19road.com/19lu/api/web/v1/relations/search').then((response)=>{
           this.listPlayer=response.data.data.items
         }).catch(function (error) {
         console.log(error);

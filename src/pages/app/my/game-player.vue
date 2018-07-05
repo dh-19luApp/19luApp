@@ -26,7 +26,7 @@
           }
       },
       beforeMount(){
-        this.axios.get('http://19lu-api.hayzon.com/v1/signups/search?fields=player&eventid='+this.$f7route.params.id).then(
+        this.axios.get('http://home.19road.com/19lu/api/web/v1/signups/search?fields=player&eventid='+this.$f7route.params.id).then(
           (response)=>{
             this.listData=response.data.data.items;
           }

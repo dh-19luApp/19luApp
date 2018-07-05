@@ -31,7 +31,7 @@
       },
       methods:{
         submitMsg(){
-          this.axios.post('http://19lu-api.hayzon.com/v1/playergroups',{
+          this.axios.post('http://home.19road.com/19lu/api/web/v1/playergroups',{
             battery_name:this.groupName
           }).then((response)=>{
               if(response.data.code=='200'){

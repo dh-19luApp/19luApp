@@ -25,7 +25,7 @@
           },
           postData(){
             if(this.form){
-              this.axios.post('http://19lu-api.hayzon.com/v1/auth/reset',this.form).then((response)=>{
+              this.axios.post('http://home.19road.com/19lu/api/web/v1/auth/reset',this.form).then((response)=>{
                 if(response.data.data){
                   alert('修改成功')
                 }else {

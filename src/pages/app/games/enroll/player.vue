@@ -35,7 +35,7 @@
             }
         },
         beforeMount(){
-            this.axios.get('http://19lu-api.hayzon.com/v1/groups/search').then(
+            this.axios.get('http://home.19road.com/19lu/api/web/v1/groups/search').then(
                 (response)=>{
                     this.groupList=response.data.data.items
                 }
@@ -46,7 +46,7 @@
                 var self = this;
                 var getPlayerMsg=function (id) {
                     return new Promise(function (resolve,reject) {
-                            self.axios.get('http://19lu-api.hayzon.com/v1/players/1?fields=myplayer',{
+                            self.axios.get('http://home.19road.com/19lu/api/web/v1/players/1?fields=myplayer',{
                                 id:id
                             }).then((response)=>{
                                 resolve(response.data.data.myplayer)

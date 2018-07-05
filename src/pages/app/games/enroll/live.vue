@@ -141,7 +141,7 @@
 
       },
       beforeMount() {
-          this.axios.get('http://19lu-api.hayzon.com/v1/services/search', {
+          this.axios.get('http://home.19road.com/19lu/api/web/v1/services/search', {
               cat_id: this.$f7route.params.id
           }).then((response) => {
               this.serverList = response.data.data.items

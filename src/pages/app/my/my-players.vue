@@ -37,7 +37,7 @@
       },
 
         beforeMount() {
-            this.axios.get('http://19lu-api.hayzon.com/v1/players/1?fields=myplayer').then(function (response) {
+            this.axios.get('http://home.19road.com/19lu/api/web/v1/players/1?fields=myplayer').then(function (response) {
                     this.listData=response.data.data.myplayer;
                 }.bind(this)
             ).catch(function (error) {
