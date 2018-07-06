@@ -12,12 +12,10 @@
           <div slot="root-start" style="margin-left: 10px;">{{name}}</div>
             <div slot="content" style="margin-bottom: 80px;">
 
-          <f7-button class="col" href="/game/:id"  style="color: #333333" >详情&nbsp;&nbsp;></f7-button>
+          <f7-button class="col" href="/game/:id"  style="color: #333333;" >详情&nbsp;&nbsp;></f7-button>
         </div>
           <div slot="content-start" class="head" v-for="list in listData" :key="list.id" style="margin-top:-10px;">
-            <div style="color: gray;" v-for="(priceItemValve,priceItemKey) in list.statistical">
-              {{priceItemKey}}：￥{{priceItemValve}}
-            </div>
+            <div style="color: gray;" v-for="(priceItemValve,priceItemKey) in list.statistical">{{priceItemKey}}：￥{{priceItemValve}}</div>
           </div>
           <!--<div slot="content" class="tail" style="margin-top: 12px">
             <div style="color: gray;">X5</div>
@@ -41,7 +39,7 @@
 
       </f7-list>
       <f7-block style="margin-top: 25px;background-color: white;padding: 20px 15px;border-bottom: 1px solid #e5e5e5;border-top:1px solid #e5e5e5">
-        <div><span style="color: #757575;">订单状态:</span><span style="margin-left: 10px;">已支付</span></div>
+        <div><span style="color: #757575;">订单状态:</span><span style="margin-left: 10px;">{{getStatus(player.status)}}</span></div>
         <div><span style="color: #757575">订单编号:</span><span style="margin-left: 10px;">24934829</span></div>
         <div><span style="color: #757575">下单时间:</span><span style="margin-left: 10px;">2018-03-28 13:30:43</span></div>
       </f7-block>
@@ -79,6 +77,16 @@
                 console.log(error);
             });
 
+        },
+        methods: {
+            getStatus(status) {
+                switch (status) {
+                    case 0:
+                        return '未支付';
+                    case 1:
+                        return '已支付';
+                }
+            },
         },
         computed: {
             ...mapState(('player'),{

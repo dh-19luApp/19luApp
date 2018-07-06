@@ -53,17 +53,17 @@
   export default {
       data(){
           return{
-            listPlayer:''
+            //listPlayer:''
           }
       },
       methods:{
           getServerPrice(id){
               return this.$store.getters['gameDetail/getServerPrice'](id)
-              console.log(getSereverPrice(id));
+              //console.log(getSereverPrice(id));
           },
           getApplyPrice(id){
               return this.$store.getters['gameDetail/getApplyPrice'](id).price
-              console.log(getApplyPrice(id));
+              //console.log(getApplyPrice(id));
           },
           getServerList(map){
               if(map){
@@ -73,17 +73,15 @@
               }
           }
       },
-      computed: {
-          ...mapState(('order'),{
-              orderData: state=>state.all
+      computed:{
+          ...mapState(('gameDetail'), {
+              listPlayer: state=>[...state.selectedPlayer]
           }),
           totalPrice() {
               return this.$store.getters['gameDetail/getTotalPrice'];
           },
       },
-      mounted(){
-          this.$store.dispatch('order/getAllMsg',{id:this.$f7route.params.id})
-      },
+
       components: {
             F7ListItem,
             F7List,
