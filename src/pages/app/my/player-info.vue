@@ -68,10 +68,27 @@
             </li>
         </f7-list>
 
-        <f7-button active style="border-radius: 8px;margin: 20px;">保存</f7-button>
+        <f7-button active style="border-radius: 8px;margin: 20px;"  @click="confirmShow=true">保存</f7-button>
+        <comfirm
+                v-model="confirmShow"
+                :title="'保存成功！'"
+                @on-confirm="loginOut"
+        >
+        </comfirm>
     </f7-page>
 </template>
 
 <script>
-    export default {}
+    export default {
+        data(){
+            return{
+                confirmShow:false
+            }
+        },
+        methods:{
+            loginOut(){
+                console.log('保存成功')
+            }
+        }
+    }
 </script>

@@ -14,7 +14,6 @@ module.exports = {
     proxyTable: {
       'api/':{
         target: 'http://home.19road.com/19lu/api/web/',
-          changeOrigin:true,
       }
     },
 
@@ -39,7 +38,7 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: false
+    cssSourceMap: true
   },
 
   build: {
